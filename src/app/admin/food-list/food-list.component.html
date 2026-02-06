@@ -1,0 +1,20 @@
+<h2>🍕 Food List</h2>
+
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Status</th>
+  </tr>
+
+  @for (food of foods; track food.id) {
+  <tr>
+ <td>{{ food.name }}</td>
+    <td>{{ food.price }}</td>
+    <td>{{ food.category }}</td>
+    <td>{{ food.isAvailable ? 'Available' : 'Out of stock' }}</td>
+  </tr>
+}
+
+</table>

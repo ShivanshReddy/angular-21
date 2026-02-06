@@ -1,0 +1,16 @@
+<h2>➕ Add Food</h2>
+
+<form [formGroup]="foodForm" (ngSubmit)="submit()">
+  <input placeholder="Food Name" formControlName="name" /><br /><br />
+
+  <input type="number" placeholder="Price" formControlName="price" /><br /><br />
+
+  <input placeholder="Category" formControlName="category" /><br /><br />
+
+  <label>
+    <input type="checkbox" formControlName="isAvailable" />
+    Available
+  </label><br /><br />
+
+  <button type="submit">Save</button>
+</form>
